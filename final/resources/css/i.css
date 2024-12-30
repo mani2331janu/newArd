@@ -1,0 +1,549 @@
+/* Global Styles */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ffffff; */
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 1.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #555;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    color: #0d3d6f;
+}
+
+/* Section Styling */
+.section {
+    padding: 30px 20px; /* Adds padding of 80px on top and bottom, and 20px on the left and right */
+    /* background-color: rgba(255, 255, 255, 0.9); Adds a semi-transparent white background with 90% opacity */
+    background-image: url(./img/back.webp); /* Sets the background image to 'back.webp' in the 'img' folder */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    text-align: center; /* Centers the text inside the section */
+    transition: background-image 0.3s ease; /* Smooth transition effect for background image changes */
+}
+
+
+.section h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(135deg, #feb47b 0%, #ff7e5f 100%);
+}
+
+/* Image Styling */
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    overflow: hidden;
+   
+}
+
+#nm h1{
+    
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 2px 2px;
+
+} 
+
+#nm p{
+    font-size: 1.9rem;
+    font-weight: bold;
+
+
+}
+
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+
+/* Large devices (desktops, 1440px and above) */
+@media (max-width: 1440px) {
+    .section h1 {
+        font-size: 2.5rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .image {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+    .card-body h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .card img {
+        max-height: 170px;
+        object-fit: cover;
+    }
+    #nm h1{
+    
+        font-size: 3rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1.9rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+/* Medium devices (tablets, 1024px and below) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .image {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    .card-body h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .card img {
+        max-height: 170px;
+        object-fit: cover;
+    }
+
+    #nm h1{
+    
+        font-size: 3rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1.8rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+/* Small devices (mobile phones, 768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .section {
+        padding: 50px 10px;
+    }
+
+    .section h1 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .image {
+        max-width: 350px;
+        height: 350px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .social-icons a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .social-icons a i {
+        margin-right: 5px;
+    }
+   
+    
+    
+   
+    .card-body h3 {
+        font-size: 1.1rem;
+    }
+    .card-body p{
+        font-size: 0.9rem;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    #nm h1{
+    
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 425px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .image {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    .card-body h3 {
+        font-size: 1rem;
+    }
+    .card-body p{
+        font-size: 0.7rem;
+    }
+
+    .card img {
+        height: 180px;
+        object-fit: cover;
+    }
+    #nm h1{
+    
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+@media (max-width: 375px) {
+   
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .image {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .social-icons a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .card-body h3 {
+        font-size: 1rem;
+    }
+    .card-body p{
+        font-size: 0.6rem;
+    }
+
+    .card img {
+        width: auto;
+        height: 180px;
+        object-fit: cover;
+    }
+    #nm h1{
+    
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+/* For extra-small mobile screens */
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .image {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .social-icons a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .card-body h3 {
+        font-size: 1rem;
+    }
+    .card-body p{
+        font-size: 0.6rem;
+    }
+
+    .card img {
+        width: auto;
+        height: 180px;
+        object-fit: cover;
+    }
+    #nm h1{
+    
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    
+    } 
+    
+    #nm p{
+        font-size: 1rem;
+        font-weight: bold;
+    
+    
+    }
+}
+
+
+/*  */
+
+.card-body h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    transition:all 0.2s ease-in-out;
+}
+
+.card img {
+    max-height: 170px;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+
